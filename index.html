@@ -1,43 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TRISHIELD COATINGS</title>
+  <title>TRISHIELD COATINGS - Waterproofing Experts</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: white;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: #fbbf24;
+      color: #0f172a;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 24px;
     }
     h1 {
       font-size: 32px;
-      color: #38bdf8;
-      margin-bottom: 10px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      font-weight: 800;
     }
-    p {
+    .highlight {
+      color: #38bdf8;
+    }
+    .subtext {
       font-size: 18px;
       color: #cbd5e1;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
+      line-height: 1.5;
     }
-    a {
-      display: inline-block;
+    .features {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: 32px;
+      gap: 10px;
+    }
+    .feature {
+      flex: 1;
+    }
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .feature-text {
+      font-size: 13px;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+    .cta-btn {
+      display: block;
       background: #22c55e;
       color: white;
-      padding: 15px 30px;
+      padding: 18px;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 12px;
       font-size: 20px;
-      font-weight: bold;
+      font-weight: 700;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);
+    }
+    .wa-btn {
+      display: block;
+      background: #1e293b;
+      border: 2px solid #334155;
+      color: white;
+      padding: 16px;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .footer-text {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #64748b;
     }
   </style>
 </head>
 <body>
-  <h1>TRISHIELD COATINGS</h1>
-  <p>Premium Roof & Wall Waterproofing Solutions</p>
-  <a href="tel:+918999578447">📞 Call Now: 8999578447</a>
+  <div class="container">
+    <div class="badge">✓ 5 YEARS WARRANTY*</div>
+    
+    <h1>Waterproofing without the <span class="highlight">Leakage?</span><br>Possible only with TRISHIELD</h1>
+    
+    <p class="subtext">Stop roof & wall leakage permanently. Advanced polymer coating for your home & building.</p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🏠</div>
+        <div class="feature-text">Expert Team</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🛠️</div>
+        <div class="feature-text">Modern Tools</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🛡️</div>
+        <div class="feature-text">Long Warranty</div>
+      </div>
+    </div>
+
+    <a href="tel:+918999578447" class="cta-btn">📞 Call Now: 8999578447</a>
+    <a href="https://wa.me/918999578447?text=Hi, I want waterproofing service for my home." class="wa-btn">💬 Chat on WhatsApp</a>
+    
+    <p class="footer-text">*Terms & Conditions Apply | TRISHIELD COATINGS</p>
+  </div>
 </body>
 </html>
