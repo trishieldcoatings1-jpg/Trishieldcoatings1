@@ -1,128 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TRISHIELD COATINGS - Waterproofing Experts</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      color: white;
-      min-height: 100vh;
-    }
-    .container {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .badge {
-      display: inline-block;
-      background: #fbbf24;
-      color: #0f172a;
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-weight: 700;
-      font-size: 14px;
-      margin-top: 20px;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 32px;
-      line-height: 1.2;
-      margin-bottom: 16px;
-      font-weight: 800;
-    }
-    .highlight {
-      color: #38bdf8;
-    }
-    .subtext {
-      font-size: 18px;
-      color: #cbd5e1;
-      margin-bottom: 32px;
-      line-height: 1.5;
-    }
-    .features {
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-      margin-bottom: 32px;
-      gap: 10px;
-    }
-    .feature {
-      flex: 1;
-    }
-    .feature-icon {
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
-    .feature-text {
-      font-size: 13px;
-      color: #94a3b8;
-      font-weight: 600;
-    }
-    .cta-btn {
-      display: block;
-      background: #22c55e;
-      color: white;
-      padding: 18px;
-      text-decoration: none;
-      border-radius: 12px;
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 12px;
-      box-shadow: 0 4px 14px rgba(34, 197, 94, 0.4);
-    }
-    .wa-btn {
-      display: block;
-      background: #1e293b;
-      border: 2px solid #334155;
-      color: white;
-      padding: 16px;
-      text-decoration: none;
-      border-radius: 12px;
-      font-size: 18px;
-      font-weight: 600;
-    }
-    .footer-text {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #64748b;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trishield Coatings | Painting, Waterproofing, Heatproofing & Sun Film Experts</title>
+    <meta name="description" content="Trishield Coatings - Nashik's trusted partner for Painting, Waterproofing, Heatproofing & Sun Film. 5 Years Warranty. Call 8999578447 for free site visit.">
+    <link rel="icon" href="logo.png">
+    <style>
+        :root {
+            --primary: #0D47A1;
+            --dark-blue: #1A237E;
+            --gold: #FFC107;
+            --green: #25D366;
+            --light-bg: #f8f9fa;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.7; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 80px 20px; }
+        .section-title { text-align: center; font-size: 36px; margin-bottom: 15px; color: var(--primary); font-weight: 800; }
+        .section-subtitle { text-align: center; font-size: 18px; margin-bottom: 50px; color: #666; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .cta-btn { background: var(--green); color: white; padding: 15px 35px; text-decoration: none; border-radius: 8px; font-size: 18px; font-weight: bold; display: inline-block; transition: 0.3s; border: none; cursor: pointer; }
+        .cta-btn:hover { background: #1da851; transform: translateY(-2px); }
+
+        /* Header */
+        .header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; }
+        .logo-img { height: 60px; width: auto; }
+        .nav-links a { margin-left: 30px; text-decoration: none; color: #333; font-weight: 600; }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-call { background: var(--primary); color: white; padding: 10px 20px; border-radius: 6px; }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary) 100%); color: white; padding: 100px 20px; text-align: center; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; line-height: 1.2; }
+        .hero .highlight { color: var(--gold); }
+        .hero p { font-size: 22px; margin-bottom: 30px; opacity: 0.9; }
+        .warranty-badge { background: var(--gold); color: #000; padding: 10px 20px; border-radius: 30px; font-weight: bold; display: inline-block; margin-top: 25px; }
+
+        /* About Us */
+        .about { background: white; }
+        .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-text h3 { font-size: 28px; color: var(--primary); margin-bottom: 20px; }
+        .about-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 30px; }
+        .stat-box { background: var(--light-bg); padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-box .number { font-size: 32px; font-weight: 800; color: var(--primary); }
+        
+        /* Services */
+        .services { background: var(--light-bg); }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .service-card { background: white; padding: 35px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 4px solid var(--primary); }
+        .service-card .icon { font-size: 50px; margin-bottom: 20px; }
+        .service-card h3 { color: var(--primary); margin-bottom: 15px; font-size: 24px; }
+        .service-card ul { list-style: none; margin-top: 20px; }
+        .service-card ul li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        .service-card ul li:before { content: '✓'; color: var(--green); position: absolute; left: 0; font-weight: bold; }
+
+        /* Why Us */
+        .why-us-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .why-card { text-align: center; padding: 20px; }
+        .why-card .icon { font-size: 40px; color: var(--primary); margin-bottom: 15px; }
+        .why-card h4 { font-size: 20px; margin-bottom: 10px; }
+
+        /* Process */
+        .process { background: var(--light-bg); }
+        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; text-align: center; }
+        .step { position: relative; }
+        .step-number { width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; margin: 0 auto 15px; }
+        
+        /* Contact */
+        .contact { background: var(--dark-blue); color: white; }
+        .contact .section-title { color: white; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+        .contact-info h3 { font-size: 24px; margin-bottom: 20px; color: var(--gold); }
+        .contact-item { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; font-size: 18px; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: none; border-radius: 6px; font-size: 16px; font-family: inherit; }
+        .contact-form button { width: 100%; }
+
+        /* Footer */
+        .footer { background: #111; color: #aaa; padding: 40px 20px; text-align: center; }
+        .footer .logo-img { height: 50px; margin-bottom: 15px; filter: brightness(0) invert(1); }
+        .footer-links { margin: 20px 0; }
+        .footer-links a { color: #aaa; margin: 0 15px; text-decoration: none; }
+        .footer-links a:hover { color: white; }
+
+        /* Floating WhatsApp */
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: var(--green); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 36px; }
+            .about-content, .contact-grid { grid-template-columns: 1fr; }
+            .section { padding: 60px 20px; }
+            .logo-img { height: 45px; }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="badge">✓ 5 YEARS WARRANTY*</div>
-    
-    <h1>Waterproofing without the <span class="highlight">Leakage?</span><br>Possible only with TRISHIELD</h1>
-    
-    <p class="subtext">Stop roof & wall leakage permanently. Advanced polymer coating for your home & building.</p>
 
-    <div class="features">
-      <div class="feature">
-        <div class="feature-icon">🏠</div>
-        <div class="feature-text">Expert Team</div>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">🛠️</div>
-        <div class="feature-text">Modern Tools</div>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">🛡️</div>
-        <div class="feature-text">Long Warranty</div>
-      </div>
-    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#"><img src="logo.png" alt="Trishield Coatings Logo" class="logo-img"></a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#why-us">Why Us</a>
+                    <a href="#contact" class="nav-call">📞 8999578447</a>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-    <a href="tel:+918999578447" class="cta-btn">📞 Call Now: 8999578447</a>
-    <a href="https://wa.me/918999578447?text=Hi, I want waterproofing service for my home." class="wa-btn">💬 Chat on WhatsApp</a>
-    
-    <p class="footer-text">*Terms & Conditions Apply | TRISHIELD COATINGS</p>
-  </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Painting, Waterproofing, Heatproofing & Sun Film Experts</h1>
+            <p>THREE SERVICES, <span class="highlight">ONE SHIELD</span> for Complete Home Protection</p>
+            <a href="tel:8999578447" class="cta-btn">📞 BOOK FREE SITE VISIT: 8999578447</a>
+            <div><span class="warranty-badge">✓ 5 YEARS SERVICE WARRANTY*</span></div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Trishield Coatings</h2>
+            <p class="section-subtitle">Nashik's most trusted partner for home protection and beautification.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Home Deserves the Best Shield</h3>
+                    <p>At Trishield Coatings, 'Protection First. Always.' is our promise. We are certified professionals specializing in advanced waterproofing, premium painting, heatproofing, and sun film solutions.</p>
+                    <p style="margin-top: 15px;">Using German technology and mechanised tools, we deliver 100% leakage-free results, cooler homes, and flawless finishes. From root cause analysis to final execution, we handle every project with precision.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="number">10,000+</div>
+                        <div>Homes Protected</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">5 Years</div>
+                        <div>Written Warranty</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">4 Core</div>
+                        <div>Expert Services</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">Nashik</div>
+                        <div>Based & Trusted</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+            <p class="section-subtitle">Complete solutions for a safer, cooler, and more beautiful home.</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="icon">💧</div>
+                    <h3>Waterproofing</h3>
+                    <p>Permanent solution for all leakages using scientific methods.</p>
+                    <ul>
+                        <li>Terrace & Roof Waterproofing</li>
+                        <li>Bathroom & Toilet Leakage</li>
+                        <li>External Wall Dampness</li>
+                        <li>Basement Waterproofing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🎨</div>
+                    <h3>Premium Painting</h3>
+                    <p>Transform your space with odour-free, durable, and weather-proof paints.</p>
+                    <ul>
+                        <li>Interior & Exterior Painting</li>
+                        <li>Texture & Royale Play Designs</li>
+                        <li>Zero Drip, Full Clean-Up</li>
+                        <li>Expert Colour Consultation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="icon">☀️</div>
+                    <h3>Heatproofing</h3>
+                    <p>Reduce indoor temperature by up to 8°C and save on electricity bills.</p>
+                    <ul>
+                        <li>Terrace Heat Reflective Coating</li>
+                        <li>External Wall Heat Shield</li>
+                        <li>Energy Saving Solution</li>
+                        <li>Eco-Friendly Materials</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🪟</div>
+                    <h3>Sun Film Installation</h3>
+                    <p>Block 99% UV rays, reduce heat & glare for homes, offices & cars.</p>
+                    <ul>
+                        <li>Home & Office Window Films</li>
+                        <li>Car Sun Control Films</li>
+                        <li>Privacy & Safety Films</li>
+                        <li>Reduces AC Load</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Trishield Coatings?</h2>
+            <p class="section-subtitle">We deliver peace of mind, not just a service.</p>
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <div class="icon">🛡️</div>
+                    <h4>5 Years Warranty</h4>
+                    <p>Written warranty on all our services for your complete assurance.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon">⚙️</div>
+                    <h4>German Technology</h4>
+                    <p>Advanced chemicals & mechanised tools for 100% accurate results.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon">👷</div>
+                    <h4>Trained Experts</h4>
+                    <p>Our team is uniformed, background-verified, and professionally trained.</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon">⏱️</div>
+                    <h4>On-Time Completion</h4>
+                    <p>We respect your time. Every project is delivered as per schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process">
+        <div class="container">
+            <h2 class="section-title">Our 4-Step Hassle-Free Process</h2>
+            <p class="section-subtitle">From your first call to final handover, we make it simple.</p>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Free Site Visit</h4>
+                    <p>Call 8999578447 to book a no-cost inspection at your convenience.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Expert Diagnosis</h4>
+                    <p>Our expert finds the root cause and suggests the best solution.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Transparent Quote</h4>
+                    <p>Get a detailed quotation with no hidden charges.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Quality Execution</h4>
+                    <p>We execute with quality checks and hand over a clean, protected home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact Trishield Coatings</h2>
+            <p class="section-subtitle" style="color: #ccc;">Ready to protect your home? Get your free inspection today.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch Directly</h3>
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <div>
+                            <strong>Call / WhatsApp</strong><br>
+                            <a href="tel:8999578447" style="color: white; text-decoration: none;">8999578447</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <div>
+                            <strong>Email Us</strong><br>
+                            <a href="mailto:trishieldcoatings1@gmail.com" style="color: white; text-decoration: none;">trishieldcoatings1@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Service Area</strong><br>
+                            Nashik, Maharashtra & Nearby
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>⏰</span>
+                        <div>
+                            <strong>Working Hours</strong><br>
+                            Monday - Sunday: 9:00 AM to 7:00 PM
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Request a Free Site Visit</h3>
+                    <form action="mailto:trishieldcoatings1@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Your Full Name" required>
+                        <input type="tel" name="phone" placeholder="Your Mobile Number" required>
+                        <input type="text" name="address" placeholder="Your Area in Nashik" required>
+                        <textarea name="message" rows="4" placeholder="Service: Painting, Waterproofing, Heatproofing, Sun Film..."></textarea>
+                        <button type="submit" class="cta-btn">Submit Enquiry</button>
+                    </form>
+                    <p style="font-size: 12px; margin-top: 10px; opacity: 0.8;">*Submit will open your email app to send us details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="logo.png" alt="Trishield Coatings Logo" class="logo-img">
+            <p>Protection First. Always.</p>
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:8999578447">Call Now</a>
+            </div>
+            <p style="margin-top: 20px;">© 2026 Trishield Coatings. All Rights Reserved. | www.trishieldcoatings.com</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918999578447" class="whatsapp-float" target="_blank">💬</a>
+
 </body>
 </html>
